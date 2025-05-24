@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animals - ANIMANIA</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("{{ url_for('static', filename='nature.jpg') }}");
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        .animals-box {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 30px;
+            border-radius: 20px;
+            max-width: 1200px;
+            width: 100%;
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            font-size: 18px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        ul li {
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 180px; 
+        }
+        ul li img {
+            width: 150px;      
+            height: 150px;     
+            margin-top: 10px;
+            border-radius: 10px;
+            object-fit: cover;
+            box-shadow: 0 0 5px #000; 
+        }
+    </style>
+</head>
+<body>
+    <div class="animals-box">
+        <h2 style="color: mediumaquamarine;">Animals that you "{{ username }}" can see in this world.</h2>
+        <ul>
+            <li>Tiger
+                <img src="{{ url_for('static', filename='tiger.jpg') }}" alt="Tiger">
+            </li>
+            <li>Deer
+                <img src="{{ url_for('static', filename='deer.jpg') }}" alt="Deer">
+            </li>
+            <li>Giraffe
+                <img src="{{ url_for('static', filename='giraffe.jpg') }}" alt="Giraffe">
+            </li>
+            <li>Panda
+                <img src="{{ url_for('static', filename='panda.jpg') }}" alt="Panda">
+            </li>
+            <li>Silverback Gorilla
+                <img src="{{ url_for('static', filename='silverback gorilla.jpg') }}" alt="Silverback Gorilla">
+            </li>
+            <li>Cats
+                <img  src="{{ url_for('static', filename='cats.jpg') }}" alt="Cats">
+            </li>
+            <li>Cow
+                <img  src="{{ url_for('static', filename='cow.jpg') }}" alt="Cow">
+            </li>
+            <li>Dog
+                <img  src="{{ url_for('static', filename='dog.jpg') }}" alt="Dog">
+            </li>
+            <li>Goat
+                <img  src="{{ url_for('static', filename='goat.jpg') }}" alt="Goat">
+            </li>
+            <li>Horse 
+                <img  src="{{ url_for('static', filename='horse.jpg') }}" alt="Horse">
+            </li>
+            <li>Mouse 
+                <img  src="{{ url_for('static', filename='mouse.jpg') }}" alt="Mouse">
+            </li>
+            <li>Pig 
+                <img  src="{{ url_for('static', filename='pig.jpg') }}" alt="Pig">
+            </li>
+            <li>Rabbit 
+                <img  src="{{ url_for('static', filename='rabbit.jpg') }}" alt="Rabbit">
+            </li>
+            <li>Sheep 
+                <img  src="{{ url_for('static', filename='sheep.jpg') }}" alt="Sheep">
+            </li>
+            <li>Squirrel 
+                <img  src="{{ url_for('static', filename='squirrel.jpg') }}" alt="Squirrel">
+            </li>
+            <li>Bear
+                <img  src="{{ url_for('static', filename='Bear.jpg') }}" alt="Bear">
+            </li>
+            <li>Wolf
+                <img  src="{{ url_for('static', filename='wolf.jpg') }}" alt="Wolf">
+            </li>
+            <li>Fox
+                <img src="{{url_for('static', filename='fox.jpg')  }}" alt="Fox">
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
